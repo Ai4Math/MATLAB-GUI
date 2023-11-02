@@ -38,7 +38,7 @@ In this example, The vector field of <x, y, z> is plotted in 3D, and the result 
    - If you wish to start over or make changes to the vector components, simply enter in inputs again and click the Plot button.
 
 ## Get Started
-1. Clone or download this [MATLAB app](vector_field_input.mlapp).
+1. Clone or download this [MATLAB app](vector_field_input_app.mlapp).
 2. Open the app in MATLAB.
 3. Follow the usage instructions mentioned above to plot the desired vector field.
 
