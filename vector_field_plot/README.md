@@ -52,6 +52,6 @@ Our Vector Field Plotting GUI can be a valuable tool for a variety of applicatio
 - **Educational Tool**: This app serves as an excellent educational resource for students studying multivariable calculus and electromagnetism. It simplifies complex concepts and promotes learning through visualization.
 
 ## References
-- You can access the reference MATLAB file for raw usage with Command Line Interface (CLI) by downloading [this MATLAB file](vector_field.m).
+- You can access the reference MATLAB file for raw usage with Command Line Interface (CLI) by downloading [this MATLAB file](vector_field_input_code.m).
 - More information about the vector field concepts and their applications can be found on [Wikipedia](https://en.wikipedia.org/wiki/Vector_field).
 
