@@ -2,11 +2,11 @@
 Welcome to the Vector Field Plotting GUI, a MATLAB application designed to empower you with the ability to visualize vector fields in both 2D and 3D. This app provides an intuitive and user-friendly interface to input vector components and generate corresponding vector field plots.
 
 ## How It Works
-### Base Design
+### Design Overview
 <img src="demo/vector_field_base.png" width="600"/>
 The Vector Field Plotting GUI is thoughtfully designed to offer users a simple and friendly interface. Here's a breakdown of the app's components and how it functions:
 
-- **Input Components**: At the core of the app are three input boxes, allowing you to specify the X, Y, and Z components of the vector field you wish to visualize. These components are the building blocks of your vector field plot.
+- **Input Components**: At the core of the app are three input boxes, allowing you to specify the X, Y, and Z components of the vector field you wish to visualize corresponding to r = <x,y,z>. These components are the building blocks of your vector field plot.
 
 - **Plotting Range**: The app also provides an option to define the range of the plotting region. By default, this range spans from -3 to 3, but you can customize it to focus on specific areas of interest within the vector field.
 
