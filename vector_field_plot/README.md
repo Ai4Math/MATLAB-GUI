@@ -27,6 +27,7 @@ In this example, the vector field of <x, y, z> is plotted in 3D, and the result 
 1. **Input Vector Components and Range**:
    - You will find three input boxes: X-component, Y-component, and Z-component. These represent the components of the vector field you wish to visualize in the format of <x,y,z>. If you need to plot a 2D field, simply leave one of the blank.
    - The range can also be modified by entering different numbers in the Lower Bound and Upper Bound boxes. Note that the Lower Bound should be less than the Larger Bound.
+   - Choose your favorite color from the dropdown Color menu.
 
 2. **Plot the Vector Field**:
    - After entering the vector components and selecting the dimension and color, simply click the "Plot" button. This action will generate the vector field plot based on your input.
