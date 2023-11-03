@@ -29,7 +29,7 @@ It will notify you of the error in the Text Field and output -1.
 
 ## Get Started
 
-1. Clone or download this [MATLAB App](sqrt_app.mlapp).
+1. Clone or download this [MATLAB App](sqrtHeron_app.mlapp).
 2. Open the app in MATLAB.
 3. Follow the usage instructions mentioned above to calculate the square root of a number.
 
