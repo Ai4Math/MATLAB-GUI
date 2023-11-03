@@ -21,7 +21,7 @@ In this example, the vector field of <y, -x> is plotted in 2D, therefore, the Z-
 
 ### 3D Plotitng
 <img src="demo/vector_field_demo_3d.png" width="600"/>
-In this example, The vector field of <x, y, z> is plotted in 3D, and the result is generated as below. Notice that the range is changed from -2 to 2 and the color is changed to purple.
+In this example, the vector field of <x, y, z> is plotted in 3D, and the result is generated as below. Notice that the range is changed from -2 to 2 and the color is changed to purple.
 
 ## Usage
 1. **Input Vector Components and Range**:
