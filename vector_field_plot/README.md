@@ -1,6 +1,9 @@
 # Vector Field Plotting GUI 
 Welcome to the Vector Field Plotting GUI, a MATLAB application designed to empower you with the ability to visualize vector fields in both 2D and 3D. This app provides an intuitive and user-friendly interface to input vector components and generate corresponding vector field plots.
 
+## Update
+- Update Range inputting feature
+
 ## How It Works
 ### Design Overview
 <img src="demo/vector_field_base.png" width="600"/>
