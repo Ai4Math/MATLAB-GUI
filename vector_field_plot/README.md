@@ -3,6 +3,8 @@ Welcome to the Vector Field Plotting GUI, a MATLAB application designed to empow
 
 ## Updates
 - Update range input features
+- Will update curl, divergence, and conservative properties when inputting a vector field soon
+- Will update more symbolic input
 
 ## How It Works
 ### Design Overview
