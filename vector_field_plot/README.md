@@ -20,6 +20,7 @@ The Vector Field Plotting GUI is thoughtfully designed to offer users a simple a
 - **Plot Button**: Once you've entered the vector components and specified the plotting range (if necessary), you're ready to bring your vector field to life. Click the "Plot" button to initiate the plotting process. The result will appear on the Vector Field Plot below.
 
 ### 2D Plotting
+<img src="demo/vector_field_demo_2d.png" width="600"/>
 In this example, the vector field of <y, -x> is plotted in 2D, therefore, the Z-component box is left blank and after clicking the button, the result is generated as below. Notice that the range is changed from -5 to 5, and the color is defaulted to red.
 
 
