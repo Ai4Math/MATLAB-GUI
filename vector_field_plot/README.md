@@ -8,7 +8,7 @@ Welcome to the Vector Field Plotting GUI, a MATLAB application designed to empow
 
 ## How It Works
 ### Design Overview
-<img src="demo/vector_field_base.png" width="600"/>
+
 The Vector Field Plotting GUI is thoughtfully designed to offer users a simple and friendly interface. Here's a breakdown of the app's components and how it functions:
 
 - **Input Components**: At the core of the app are three input boxes, allowing you to specify the X, Y, and Z components of the vector field you wish to visualize corresponding to r = <x, y, z>. These components are the building blocks of your vector field plot.
