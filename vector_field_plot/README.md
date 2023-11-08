@@ -21,12 +21,12 @@ The Vector Field Plotting GUI is thoughtfully designed to offer users a simple a
 
 ### 2D Plotting
 <img src="demo/vector_field_demo_2d.png" width="600"/>
-In this example, the vector field of <y, -x> is plotted in 2D, therefore, the Z-component box is left blank and after clicking the button, the result is generated as below. Notice that the range is changed from -5 to 5, and the color is defaulted to red.
+In this example, the vector field of <y, -x> is plotted in 2D, therefore, the Z-component box is left blank and after clicking the button, the result is generated as below. Notice that the range is changed from -5 to 5, and the color defaults to red. The range value is set to 1.5, which is the range between each head of the vector field.
 
 
 ### 3D Plotitng
 <img src="demo/vector_field_demo_3d.png" width="600"/>
-In this example, the vector field of <x, y, z> is plotted in 3D, and the result is generated as below. Notice that the range is changed from -2 to 2 and the color is changed to purple.
+In this example, the vector field of <x, y, z> is plotted in 3D, and the result is generated as below. Notice that the range is changed from -2 to 2 and the color is changed to purple. The range value is set to 0.5, which is the range between each head of the vector field, and it appear to be thicker than the previous 2D plot whose range is 1.5.
 
 ## Usage
 1. **Input Vector Components and Range**:
