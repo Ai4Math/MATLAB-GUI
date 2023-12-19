@@ -1,23 +1,26 @@
 # Vector Field Plotting and Vector Line Integral GUI 
 Welcome to the Vector Field Plotting and Vector Line Integral GUI, a MATLAB application designed to empower you with the ability to visualize vector fields in both 2D and 3D. This app provides an intuitive and user-friendly interface to input vector components and generate corresponding vector field plots. Additionally, this is an updated version of the vector plotting GUI, which allows users to input a parametrized curve **r(t)** = <A(t), B(t), C(t)> and evaluate the integral of **F** along the curve. 
 
-## Updates
-- Update range input features
-- Will update curl, divergence, and conservative properties when inputting a vector field soon
-- Will update more symbolic input
-
 ## How It Works
 ### Design Overview
 
 The Vector Field Plotting GUI is thoughtfully designed to offer users a simple and friendly interface. Here's a breakdown of the app's components and how it functions:
 
-- **Input Components**: At the core of the app are three input boxes, allowing you to specify the X, Y, and Z components of the vector field you wish to visualize corresponding to r = <x, y, z>. These components are the building blocks of your vector field plot.
+#### Input Components
+- At the core of the app are three input boxes, allowing you to specify the X, Y, and Z components of the vector field you wish to visualize corresponding to r = <x, y, z>. These components are the building blocks of your vector field plot.
+- There are also 3 more input boxes for inputting in the A(t), B(t), and C(t) components of the parametrized curve r(t). These components are used for plotting the line.
+- The Field Thickness Input is used to control how many vectors will appear on the plotting field. 
 
-- **Plotting Range**: The app also provides an option to define the range of the plotting region. By default, this range spans from -3 to 3, but you can customize it to focus on specific areas of interest within the vector field. The lower bound should be smaller than the larger bound.
+#### Plotting Range: 
+- The app also provides an option to define the range of the plotting region. By default, this range spans from -3 to 3, but you can customize it to focus on specific areas of interest within the vector field. The lower bound should be smaller than the larger bound.
+- This range is also considered as the lower bound and the upper bound for the line integral.
 
-- **Color Selection**: The Color Dropdown offers a choice of 8 options to change the colors of the vectors displayed on the plots, with the default color set to red.
+#### Color Selection: 
+- There used to be a color selection feature in the vector plotting GUI app; however, to make it simpler, we decided to default the color of the vector fields to blue, and the line to red. 
 
-- **Plot Button**: Once you've entered the vector components and specified the plotting range (if necessary), you're ready to bring your vector field to life. Click the "Plot" button to initiate the plotting process. The result will appear on the Vector Field Plot below.
+#### Plot Button: 
+- Once you've entered the vector components and specified the plotting range, you're ready to bring your vector field to life. Click the "Plot" button to initiate the plotting process. The result will appear on the Vector Field Plot below. The Field will be plotted in blue and the line will be plotted in red.
+- The integral value will also appear on the top-right box. 
 
 ### 2D Plotting
 <img src="demo/vector_field_demo_2d.png" width="600"/>
