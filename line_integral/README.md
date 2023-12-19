@@ -9,7 +9,7 @@ The Vector Field Plotting GUI is thoughtfully designed to offer users a simple a
 #### Input Components
 - At the core of the app are three input boxes, allowing you to specify the X, Y, and Z components of the vector field you wish to visualize corresponding to r = <x, y, z>. These components are the building blocks of your vector field plot.
 - There are also 3 more input boxes for inputting in the A(t), B(t), and C(t) components of the parametrized curve r(t). These components are used for plotting the line.
-- The Field Thickness Input is used to control how many vectors will appear on the plotting field for each dimension. 
+- The Field Thickness Input is used to control how many vectors will appear on the plotting field multiplied by the number of dimensions, default to 5.
 
 #### Plotting Range: 
 - The app also provides an option to define the range of the plotting region. By default, this range spans from -3 to 3, but you can customize it to focus on specific areas of interest within the vector field. The lower bound should be smaller than the larger bound.
@@ -23,9 +23,9 @@ The Vector Field Plotting GUI is thoughtfully designed to offer users a simple a
 - The integral value will be calculated using the trapezoidal method and will also appear on the top-right box. 
 
 ### 2D Plotting
-<img src="demo/vector_field_demo_2d.png" width="600"/>
-In this example, the vector field of F = <y, -x> is plotted in 2D, therefore, the Z-component box is left blank and after clicking the button, the result is generated as below. Notice that the range is changed from -5 to 5, and the color defaults to red. The range value is set to 1.5, which is the range between each head of the vector field.
-
+<img src="demo/vector_field_line_integral_2d.png" width="600"/>
+- In this example, the vector field of F = <y, 2x> and the curve r(t) = <-t, 1+t> from t = -1 to t = 0 are plotted in 2D, therefore, the Z-component and C(t) boxes are both left blank and after clicking the button, the result is generated as below. Notice that the field thickness is set to 5, and we are plotting in 2D dimension, therefore there will be a total of 5x5 = 25 vectors for the field. 
+- The vector line integral result is approximated to be 0.5 appearing on the top-right box. 
 
 ### 3D Plotitng
 <img src="demo/vector_field_demo_3d.png" width="600"/>
