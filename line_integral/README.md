@@ -20,7 +20,7 @@ The Vector Field Plotting GUI is thoughtfully designed to offer users a simple a
 
 #### Plot Button: 
 - Once you've entered the vector components and specified the plotting range, you're ready to bring your vector field to life. Click the "Plot" button to initiate the plotting process. The result will appear on the Vector Field Plot below. The Field will be plotted in blue and the line will be plotted in red.
-- The integral value will also appear on the top-right box. 
+- The integral value will be calculated using the trapezoidal method and will also appear on the top-right box. 
 
 ### 2D Plotting
 <img src="demo/vector_field_demo_2d.png" width="600"/>
