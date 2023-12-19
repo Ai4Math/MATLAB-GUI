@@ -9,7 +9,7 @@ The Vector Field Plotting GUI is thoughtfully designed to offer users a simple a
 #### Input Components
 - At the core of the app are three input boxes, allowing you to specify the X, Y, and Z components of the vector field you wish to visualize corresponding to r = <x, y, z>. These components are the building blocks of your vector field plot.
 - There are also 3 more input boxes for inputting in the A(t), B(t), and C(t) components of the parametrized curve r(t). These components are used for plotting the line.
-- The Field Thickness Input is used to control how many vectors will appear on the plotting field. 
+- The Field Thickness Input is used to control how many vectors will appear on the plotting field for each dimension. 
 
 #### Plotting Range: 
 - The app also provides an option to define the range of the plotting region. By default, this range spans from -3 to 3, but you can customize it to focus on specific areas of interest within the vector field. The lower bound should be smaller than the larger bound.
@@ -24,7 +24,7 @@ The Vector Field Plotting GUI is thoughtfully designed to offer users a simple a
 
 ### 2D Plotting
 <img src="demo/vector_field_demo_2d.png" width="600"/>
-In this example, the vector field of <y, -x> is plotted in 2D, therefore, the Z-component box is left blank and after clicking the button, the result is generated as below. Notice that the range is changed from -5 to 5, and the color defaults to red. The range value is set to 1.5, which is the range between each head of the vector field.
+In this example, the vector field of F = <y, -x> is plotted in 2D, therefore, the Z-component box is left blank and after clicking the button, the result is generated as below. Notice that the range is changed from -5 to 5, and the color defaults to red. The range value is set to 1.5, which is the range between each head of the vector field.
 
 
 ### 3D Plotitng
