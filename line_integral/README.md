@@ -20,7 +20,11 @@ The Vector Field Plotting GUI is thoughtfully designed to offer users a simple a
 
 #### Plot Button: 
 - Once you've entered the vector components and specified the plotting range, you're ready to bring your vector field to life. Click the "Plot" button to initiate the plotting process. The result will appear on the Vector Field Plot below. The Field will be plotted in blue and the line will be plotted in red.
-- The integral value will be calculated using the trapezoidal method and will also appear on the top-right box. 
+- The integral value will be calculated using the trapezoidal method and will also appear on the top-right box.
+
+#### Exit and Clear Button: 
+- Click the "Exit" button to close the app.
+- Click the "Clear" button to clear the field. 
 
 ### 2D Plotting 
 #### <img src="demo/vector_field_line_integral_2d.png" width="600"/>  
@@ -30,15 +34,14 @@ In this example, the vector field of F(x,y,z) = <y, 2x> and the curve r(t) = <-t
 #### <img src="demo/vector_field_line_integral_3d.png" width="600"/>
 In this example, the vector field of F(x,y,z) = <x, z, y> and the curve r(t) = <cos(t), t, sin(t)> from t = 0 to t = pi/2 are plotted in 3D, and the result is generated as below. Notice that the field thickness is set to 4, and we are plotting in 3D dimension, therefore there will be a total of 4x4x4 = 64 vectors for the field. The vector line integral result is approximated to be 1.07 (which is pi/2 - 1/2, but the trapezoidal method cannot give the real value) appearing on the top-right box. 
 
-
 ## Usage
 1. **Input Vector Components and Range**:
-   - You will find three input boxes: X-component, Y-component, and Z-component. These represent the components of the vector field you wish to visualize in the format of <x,y,z>. If you need to plot a 2D field, simply leave one of the blank.
+   - You will find three input boxes: X-component, Y-component, and Z-component for the vector field F(x,y,z), and then input three more boxes: A(t), B(t), and C(t) for the curve r(t).  If you need to plot a 2D field, simply leave the Z-component and the C(t) boxes blank.
    - The range can also be modified by entering different numbers in the Lower Bound and Upper Bound boxes. Note that the Lower Bound should be less than the Larger Bound.
-   - Choose your favorite color from the dropdown Color menu.
+   - Try to input different numbers in Field Thickness to have a better visualization.
 
 2. **Plot the Vector Field**:
-   - After entering the vector components and selecting the dimension and color, simply click the "Plot" button. This action will generate the vector field plot based on your input.
+   - After entering the vector components and selecting the dimension and color, simply click the "Plot" button. This action will generate the vector field and line plot based on your input, as well as give the vector line integral value.
 
 3. **Interact with the Plot**:
    - Once the plot is generated, you can interact with it using standard MATLAB plot controls.
@@ -49,7 +52,7 @@ In this example, the vector field of F(x,y,z) = <x, z, y> and the curve r(t) = <
    - If you wish to start over or make changes to the vector components, simply enter in inputs again and click the Plot button.
 
 ## Get Started
-1. Clone or download this [MATLAB app](vector_field_input_app.mlapp).
+1. Clone or download this [MATLAB app](line_intefral.mlapp).
 2. Open the app in MATLAB.
 3. Follow the usage instructions mentioned above to plot the desired vector field.
 
@@ -63,7 +66,7 @@ Our Vector Field Plotting GUI can be a valuable tool for a variety of applicatio
 - **Educational Tool**: This app serves as an excellent educational resource for students studying multivariable calculus and electromagnetism. It simplifies complex concepts and promotes learning through visualization.
 
 ## References
-- You can access the reference MATLAB file for raw usage with Command Line Interface (CLI) by downloading [this MATLAB file](vector_field_input_code.m).
-- More information about the vector field concepts and their applications can be found on [Wikipedia](https://en.wikipedia.org/wiki/Vector_field).
+- You can access the reference raw file to understand what happens when click the plotting button by downloading [this raw file](vector_line_integral_raw_code.txt).
+- More information about the vector field concepts and line integral and their applications can be found on [Wikipedia](https://en.wikipedia.org/wiki/Vector_field) and this [Line Integrals Of Vector Fields tutorial](https://tutorial.math.lamar.edu/classes/calciii/LineIntegralsVectorFields.aspx)
 
 
