@@ -24,12 +24,12 @@ The Vector Field Plotting GUI is thoughtfully designed to offer users a simple a
 
 ### 2D Plotting 
 <img src="demo/vector_field_line_integral_2d.png" width="600"/>
-- In this example, the vector field of F = <y, 2x> and the curve r(t) = <-t, 1+t> from t = -1 to t = 0 are plotted in 2D, therefore, the Z-component and C(t) boxes are both left blank and after clicking the button, the result is generated as below. Notice that the field thickness is set to 5, and we are plotting in 2D dimension, therefore there will be a total of 5x5 = 25 vectors for the field.
-- The vector line integral result is approximated to be 0.5 appearing on the top-right box. 
+In this example, the vector field of F = <y, 2x> and the curve r(t) = <-t, 1+t> from t = -1 to t = 0 are plotted in 2D, therefore, the Z-component and C(t) boxes are both left blank and after clicking the button, the result is generated as below. Notice that the field thickness is set to 5, and we are plotting in 2D dimension, therefore there will be a total of 5x5 = 25 vectors for the field. The vector line integral result is approximated to be 0.5 appearing on the top-right box. 
 
 ### 3D Plotitng
-<img src="demo/vector_field_demo_3d.png" width="600"/>
-In this example, the vector field of <x, y, z> is plotted in 3D, and the result is generated as below. Notice that the range is changed from -2 to 2 and the color is changed to purple. The range value is set to 0.5, which is the range between each head of the vector field, and it appear to be thicker than the previous 2D plot whose range is 1.5.
+<img src="demo/vector_field_line_integral_3d.png" width="600"/>
+In this example, the vector field of F = <x, z, y> and the curve r(t) = <cos(t), t, sin(t)> from t = 0 to t = pi/2 are plotted in 3D, and the result is generated as below. Notice that the field thickness is set to 4, and we are plotting in 3D dimension, therefore there will be a total of 4x4x4 = 64 vectors for the field. The vector line integral result is approximated to be 1.07 (which is pi/2 - 1/2, but the trapezoidal method cannot give the real value) appearing on the top-right box. 
+
 
 ## Usage
 1. **Input Vector Components and Range**:
