@@ -24,7 +24,7 @@ The Vector Field Plotting GUI is thoughtfully designed to offer users a simple a
 
 ### 2D Plotting 
 <img src="demo/vector_field_line_integral_2d.png" width="600"/>
-https://quicklatex.com/cache3/a2/ql_f0bace05dc159368fa0416981c8d42a2_l3.png
+![image](https://github.com/Ai4Math/MATLAB-GUI/assets/114793725/aaa64e33-8e34-4995-8500-6d2c835380f0)
 In this example, the vector field of F(x,y,z) = <y, 2x> and the curve r(t) = <-t, 1+t> from t = -1 to t = 0 are plotted in 2D, therefore, the Z-component and C(t) boxes are both left blank and after clicking the button, the result is generated as below. Notice that the field thickness is set to 5, and we are plotting in 2D dimension, therefore there will be a total of 5x5 = 25 vectors for the field. The vector line integral result is approximated to be 0.5 appearing on the top-right box. 
 
 ### 3D Plotitng
