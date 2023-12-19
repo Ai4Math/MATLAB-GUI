@@ -1,0 +1,200 @@
+function PlotVectorFieldButtonPushed(app, event)
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%% CREATE THE BOX AND PLOT VECTOR FIELDS %%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    % Clear the plot before plotting a new one
+    cla(app.UIAxes, 'reset')
+    
+    % Get the lower and the upper bound
+    lower_bound = app.LowerBoundEditField.Value;
+    upper_bound = app.UpperBoundEditField.Value;
+    
+    % Get the parametrization of the line
+    A_path = convertCharsToStrings(app.AtEditField.Value);
+    B_path = convertCharsToStrings(app.BtEditField.Value);
+    C_path = convertCharsToStrings(app.CtEditField.Value);
+    
+    % We want to make a box that fix the line in
+    % Therefore, we need to find the lower/upper bound for the line
+    % in x, y, and z coordinates
+    lower_bound_x = +Inf; lower_bound_y = +Inf; lower_bound_z = +Inf;
+    upper_bound_x = -Inf; upper_bound_y = -Inf; upper_bound_z = -Inf;
+    
+    % Loop through around 100 t-value from lower to upper bound
+    % Evaluate the value of each coordinate at that t-value
+    % Get the lowest and the largest
+    for t = lower_bound:(upper_bound-lower_bound)/100:upper_bound
+  
+        x_value_at_t = eval(A_path);
+        if x_value_at_t < lower_bound_x
+            lower_bound_x = x_value_at_t; end
+        if x_value_at_t > upper_bound_x
+            upper_bound_x = x_value_at_t; end
+  
+        y_value_at_t = eval(B_path);
+        if y_value_at_t < lower_bound_y
+            lower_bound_y = y_value_at_t; end
+        if y_value_at_t > upper_bound_y
+            upper_bound_y = y_value_at_t; end
+  
+        if (C_path ~= "")
+            z_value_at_t = eval(C_path);
+            if z_value_at_t < lower_bound_z
+                lower_bound_z = z_value_at_t; end
+            if z_value_at_t > upper_bound_z
+                upper_bound_z = z_value_at_t; end
+        end
+  
+    end
+    
+    % Set the number of vector to be plot for each axes, default is 5
+    % For example, 5 means that there is 5x5x5 = 125 vectors in 3D
+    % or 5x5 = 25 vectors in 2D plotted in the xyz coordiantes
+    numbers_of_vector = app.FieldThicknessEditField.Value;
+    
+    % To make sure that the line is in the box, we take the lowest
+    % of the lower bound and the largest of the upper bound
+    max_upper = max([upper_bound_x, upper_bound_y, upper_bound_z]);
+    min_lower = min([lower_bound_x, lower_bound_y, lower_bound_z]);
+    
+    % constructing the range for the rectangular box with meshgrid
+    [matrix_x ,matrix_y, matrix_z] = meshgrid( ...
+        min_lower:(max_upper - min_lower)/(numbers_of_vector - 1):max_upper);
+    
+    % Convert User's input from char to string in the text field 
+    x_expr = convertCharsToStrings(app.XcomponentEditField.Value);
+    y_expr = convertCharsToStrings(app.YcomponentEditField.Value);
+    z_expr = convertCharsToStrings(app.ZcomponentEditField.Value);
+  
+    % Create zeros 3D array to store the results
+    [rows, cols, heights] = size(matrix_x);
+    matrix_x_output = zeros(rows, cols, heights);
+    matrix_y_output = zeros(rows, cols, heights);
+    matrix_z_output = zeros(rows, cols, heights);
+  
+    % Loop through each element in the orignal array
+    % Update the 3D placeholder matrix correspondingly
+    for i = 1:rows
+        for j = 1:cols
+            for k = 1:heights
+                % Set x, y, z = to the corresponding element to use eval
+                x = matrix_x(i,j,k); y = matrix_y(i,j,k); z = matrix_z(i,j,k);
+  
+                % Use eval on the x, y and z element above to
+                % fill up the placeholder 3D array
+                if (x_expr ~= "")
+                    matrix_x_output(i,j,k) = eval(x_expr);
+                end
+  
+                if (y_expr ~= "")
+                    matrix_y_output(i,j,k) = eval(y_expr);
+                end
+  
+                if (z_expr ~= "")
+                   matrix_z_output(i,j,k) = eval(z_expr);
+                end
+            end 
+        end
+    end
+  
+    % Plot
+    if (z_expr ~= "")
+        % 3D quiver plot with red color
+        quiver3(app.UIAxes, matrix_x, matrix_y, matrix_z, ...
+            matrix_x_output, matrix_y_output, matrix_z_output, 'Color', 'b', 'LineWidth', 1.5);
+    else
+        % 2D quiver plot with red color
+        quiver(app.UIAxes, matrix_x, matrix_y, matrix_x_output, matrix_y_output, 'b', 'LineWidth', 1.5);
+    end
+  
+    hold(app.UIAxes, 'on');
+  
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%% PLOT LINE AND GET INTEGRAL VALUE %%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  
+    % Prompt the user for input functions A(t), B(t), C(t) (parameterized curve)
+    A_input = app.AtEditField.Value;
+    B_input = app.BtEditField.Value;
+    C_input = app.CtEditField.Value;
+  
+    % Prompt the user for input functions X, Y, Z (vector field)
+    P_input = app.XcomponentEditField.Value;
+    Q_input = app.YcomponentEditField.Value;
+    R_input = app.ZcomponentEditField.Value;
+  
+    % Prompt the user for bounds and grid size
+    t_min = app.LowerBoundEditField.Value;
+    t_max = app.UpperBoundEditField.Value;
+    
+    % check if the third input is blank, then do 2D line and vector fields
+    if (R_input == "")
+        % Define the parameterized curve (replace with your expressions)
+        A = str2func(['@(t) ' A_input]);
+        B = str2func(['@(t) ' B_input]);
+  
+        % Convert input strings to+ function handles for the vector field
+        P = str2func(['@(x, y) ' P_input]);
+        Q = str2func(['@(x, y) ' Q_input]);
+  
+        % Define the parameter range
+        t = linspace(t_min, t_max, 100);
+  
+        % Evaluate the vector field along the parameterized curve
+        x_curve = A(t);
+        y_curve = B(t);
+        
+        % Compute the line integral using the parameterized curve and vector field
+        dx = gradient(A(t), t);
+        dy = gradient(B(t), t);
+        
+        % Make the integral 
+        integrand = P(x_curve, y_curve) .* dx + ...
+            Q(x_curve, y_curve) .* dy;
+  
+        % Evaluate the integral using trapozoid methods
+        line_integral_value = trapz(t, integrand);
+        app.int_CvecFvecdrint_abvecFvecrtcdotvecrtdttextbfvalueEditField.Value = line_integral_value;
+  
+        % Plot the 2D parameterized curve on UIAxes
+        plot(app.UIAxes, x_curve, y_curve, 'r', 'LineWidth', 3);
+        hold(app.UIAxes, 'off');
+    
+    % if the third input is not empty, make 3D line and 3D vector fields
+    else 
+        % Convert input strings to function handles for the parameterized curve
+        A = str2func(['@(t) ' A_input]);
+        B = str2func(['@(t) ' B_input]);
+        C = str2func(['@(t) ' C_input]);
+  
+        % Convert input strings to+ function handles for the vector field
+        P = str2func(['@(x, y, z) ' P_input]);
+        Q = str2func(['@(x, y, z) ' Q_input]);
+        R = str2func(['@(x, y, z) ' R_input]);
+  
+        % Create a parameter range for the curve
+        t = linspace(t_min, t_max, 100);
+  
+        % Evaluate the parameterized curve at each point in the parameter range
+        x_curve = A(t);
+        y_curve = B(t);
+        z_curve = C(t);
+  
+        % Compute the line integral using the parameterized curve and vector field
+        dx = gradient(A(t), t);
+        dy = gradient(B(t), t);
+        dz = gradient(C(t), t);
+         
+        integrand = P(x_curve, y_curve, z_curve) .* dx + ...
+            Q(x_curve, y_curve, z_curve) .* dy + ...
+            R(x_curve, y_curve, z_curve) .* dz;
+  
+        % Evaluate the integral using trapozoid methods
+        line_integral_value = trapz(t, integrand);
+        app.int_CvecFvecdrint_abvecFvecrtcdotvecrtdttextbfvalueEditField.Value = line_integral_value;
+  
+        % Plot the 3D parameterized curve on UIAxes
+        plot3(app.UIAxes, x_curve, y_curve, z_curve, 'r', 'LineWidth', 3);
+        hold(app.UIAxes, 'off');
+    end
