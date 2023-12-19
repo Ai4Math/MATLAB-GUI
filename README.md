@@ -8,4 +8,4 @@
 
 ## [Vector Field Plot and Line Integral GUI](./line_integral/)
 
-<img src="line_integral/demo/vector_field_line_integral_3d.png" width="600"/>
+<img src="line_integral/demo/vector_field_line_integral_3d.png" width="800"/>
