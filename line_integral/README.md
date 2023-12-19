@@ -1,5 +1,5 @@
 # Vector Field Plotting and Vector Line Integral GUI 
-Welcome to the Vector Field Plotting and Vector Line Integral GUI, a MATLAB application designed to empower you with the ability to visualize vector fields in both 2D and 3D. This app provides an intuitive and user-friendly interface to input vector components and generate corresponding vector field plots. Additionally, this is an updated version of the vector plotting GUI, which allows users to input a parametrized curve **r(t)** = <A(t), B(t), C(t)> and evaluate the integral of **F** along the curve. 
+Welcome to the Vector Field Plotting and Vector Line Integral GUI, a MATLAB application designed to empower you with the ability to visualize vector fields in both 2D and 3D. This app provides an intuitive and user-friendly interface to input vector components and generate corresponding vector field plots. Additionally, this is an updated version of the vector plotting GUI, which allows users to input a parametrized curve **r(t)** = <A(t), B(t), C(t)> and evaluate the integral of **F(x,y,z)** = <X, Y, Z> along the curve. 
 
 ## How It Works
 ### Design Overview
