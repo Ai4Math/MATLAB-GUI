@@ -66,7 +66,7 @@ Our Vector Field Plotting GUI can be a valuable tool for a variety of applicatio
 - **Educational Tool**: This app serves as an excellent educational resource for students studying multivariable calculus and electromagnetism. It simplifies complex concepts and promotes learning through visualization.
 
 ## References
-- You can access the reference raw file to understand what happens when click the plotting button by downloading [this raw file](vector_line_integral_raw_code.txt).
+- You can access the reference raw file to understand what happens when click the plotting button by seeing [this raw file](vector_line_integral_raw_code.txt).
 - More information about the vector field concepts and line integral and their applications can be found on [Wikipedia](https://en.wikipedia.org/wiki/Vector_field) and this [Line Integrals Of Vector Fields tutorial](https://tutorial.math.lamar.edu/classes/calciii/LineIntegralsVectorFields.aspx).
 
 
