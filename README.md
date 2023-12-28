@@ -1,5 +1,7 @@
 # MATLAB-GUI
 
+Last updated by Huy Nguyen 
+
 ## [Square Root Function GUI](./square_root_function/)
 
 <img src="square_root_function/demo/sqrt_demo_1.png" width="800"/>
@@ -11,3 +13,4 @@
 ## [Vector Field Plot and Line Integral GUI](./line_integral/)
 
 <img src="line_integral/demo/vector_field_line_integral_3d.png" width="800"/>
+
