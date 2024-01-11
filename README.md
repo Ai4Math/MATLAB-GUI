@@ -1,6 +1,6 @@
 # MATLAB-GUI
 
-This Project's purpose is to simplify and visualize Multivariable Calculus concepts using interactive simulations and real-world engineering examples through MATLAB and Python, guided by Professor Heze Chen - Assistant Professor in the Department of Applied Mathematics at the University of Virginia. 
+This project simplifies Multivariable Calculus with interactive simulations and real-world engineering examples using MATLAB and Python, guided by Professor Heze Chen from the University of Virginia's Department of Applied Mathematics.
 
 Last updated by Huy Nguyen - Dec 2023 
 
