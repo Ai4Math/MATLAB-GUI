@@ -1,5 +1,7 @@
 # MATLAB-GUI
 
+This Project is led by Professor Heze Chen - Assistant Professor in the Department of Applied Mathematics at the University of Virginia. 
+
 Last updated by Huy Nguyen - Dec 2023 
 
 ## [Square Root Function GUI](./square_root_function/)
