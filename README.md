@@ -2,7 +2,7 @@
 
 This project simplifies Multivariable Calculus with interactive simulations and real-world engineering examples using MATLAB and Python, guided by Professor Heze Chen from the University of Virginia's Department of Applied Mathematics, inspired by UVA APMA 2120 course concepts.
 
-Last updated by Huy Nguyen - Dec 2023 
+-- Last updated by Huy Nguyen - Dec 2023 -- 
 
 ## [Square Root Function GUI](./square_root_function/)
 
