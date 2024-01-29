@@ -52,7 +52,7 @@ In this example, the vector field of F(x,y,z) = <x, z, y> and the curve r(t) = <
    - If you wish to start over or make changes to the vector components, simply enter in inputs again and click the Plot button.
 
 ## Get Started
-1. Clone or download this [MATLAB app](line_intefral.mlapp).
+1. Clone or download this [MATLAB app](LineIntegralGUI__FINAL_v2.mlapp).
 2. Open the app in MATLAB.
 3. Follow the usage instructions mentioned above to plot the desired vector field.
 
