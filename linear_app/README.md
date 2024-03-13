@@ -21,7 +21,7 @@
 ## 2. How to desgin
 - Just Drag and edit the appearance on the right menu in Desgin View
 - Explore the common stuff from the left in the desgin view
-- Just put the html file in the same directory and on the menu of the html tag, specify the filename
+- Just put the html file in the same directory and on the menu of the html tag, specify the filename, hmm actually I think we can did some cool design with this stuff
 ![image](https://github.com/Ai4Math/MATLAB-GUI/assets/114793725/4b0a666a-24a9-4b73-8919-b8408e6f6f92)
 
 
