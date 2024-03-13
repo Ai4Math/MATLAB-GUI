@@ -18,14 +18,14 @@
 5. Save the mlapp version on the top left corner.
 6. Upload when you are finished appName_yourName_dayAndTime_version.mlapp, for example `linear_Huy_March12-22-30pm_v2.mlapp` if I work on `linear_Huy_March12-10-30am_v1.mlapp`
 
-# 2. How to desgin
+## 2. How to desgin
 - Just Drag and edit the appearance on the right menu in Desgin View
 - Explore the common stuff from the left in the desgin view
 - Just put the html file in the same directory and on the menu of the html tag, specify the filename
 ![image](https://github.com/Ai4Math/MATLAB-GUI/assets/114793725/4b0a666a-24a9-4b73-8919-b8408e6f6f92)
 
 
-## 2. Code Understanding 
+## 3. Code Understanding 
 
 ### Get User Input - GenerateMatrix Button
 ![image](https://github.com/Ai4Math/MATLAB-GUI/assets/114793725/222bd6df-d964-4c3c-8efa-a0d2b862bdc5)
