@@ -16,7 +16,7 @@
   - Right click button --> Add callback function
   - Add code corresponding to the function
 5. Save the mlapp version on the top left corner.
-6. Upload when you are finished appName_yourName_dayAndTime_version.mlapp, for example `linear_Huy_March12-22-30pm_v2.mlapp` if I work on `linear_Huy_March12-10-30am_v1.mlapp`
+6. Upload when you are finished `appName_yourName_dayAndTime_version.mlapp`, for example `linear_Huy_March12-22-30pm_v2.mlapp` if I work on `linear_Huy_March12-10-30am_v1.mlapp`
 
 ## 2. How to desgin
 - Just Drag and edit the appearance on the right menu in Desgin View
