@@ -29,7 +29,7 @@
 
 ### Get User Input - GenerateMatrix Button
 ![image](https://github.com/Ai4Math/MATLAB-GUI/assets/114793725/222bd6df-d964-4c3c-8efa-a0d2b862bdc5)
-- When clicking the generate button, the table will become row x col table, and the user will input the number manually.
+- When clicking the generate button, the table will become zeros matrix with row x col, and the user will input the number manually.
 
 ### CheckSpan Button
 ![image](https://github.com/Ai4Math/MATLAB-GUI/assets/114793725/8f7e5ebe-a88b-4bf8-ab4f-4cc7ac49b669)
