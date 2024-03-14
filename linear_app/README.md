@@ -38,4 +38,4 @@
 - Use `app.ResultsEditField.Value = "the vector b IS IN the span of the given set of vectors";` to output the value
 
 
-### CheckLinearIndep - Same with CheckSpan, but modify the inside code (which is from Prof. Li)
+### CheckLinearIndep - Same idea with CheckSpan, but modify the inside code (which is from Prof. Li)
