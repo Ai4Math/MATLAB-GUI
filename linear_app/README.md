@@ -6,8 +6,8 @@
 
 # TODO: Desgin and Implement Function
 ### Done: CheckSpan, Check Linearly Independent, Find Basis of Rows space in Comsubspace.m
-### Not Done: Ploting stuff, Rows operations (Dswaprow, Dmulrow, Daddrow), All ii to v in Comsubspace.m
-### Classification: Matrix outputs text, Matrix output Matrix, Matrix outputs plot
+### Not Done: Ploting stuff, Rows operations (Dswaprow, Dmulrow, Daddrow), All ii to v in Comsubspace.m, Determinant stuff (CramRule, FindDet)
+### Classification: Matrix outputs text (good), Matrix outputs Matrix (good),  Matrix outputs plot (do later)
 
 <br>
 
