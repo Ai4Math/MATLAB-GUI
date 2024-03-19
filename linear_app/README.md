@@ -1,9 +1,17 @@
 ### THIS ONLY WORK WITH THE SETUP DOWNLOADED FROM THIS GITHUB REPO, IF YOU ARE STARTING FROM SCRATCH, YOU MAY NEED TO CUSTOMIZED THE TABLE AND BUTTON NAME AND SOME STUFF
 
-# Linear Algebra App (In Progress)
+# Linear Algebra App (In Progress)  
+
+<br> 
 
 # TODO: Desgin and Implement Function
+### Done: CheckSpan, Check Linearly Independent, Find Basis of Rows space in Comsubspace.m
+### Not Done: Ploting stuff, Rows operations (Dswaprow, Dmulrow, Daddrow), All ii to v in Comsubspace.m
+### Classification: Matrix outputs text, Matrix output Matrix, Matrix outputs plot
 
+<br>
+
+# How to Work Together
 ### - Check for the lastest version to download (just like git pull)
 ### - Update your version when you are done working (just like git push)
 ### - Text in the Slack team to notify people
