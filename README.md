@@ -14,4 +14,4 @@ Last updated by Huy Nguyen - March 2024
 
 ## [3. Vector Field Plot and Line Integral GUI (read more)](./line_integral/)
 
-[<img src="line_integral/demo/vector_field_line_integral_3d.png" width="800"/>](./line_integral/)
+[<img src="line_integral/demo/vector_field_line_integral_3d.png" width="600"/>](./line_integral/)
