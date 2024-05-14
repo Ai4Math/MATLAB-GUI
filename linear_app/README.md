@@ -21,7 +21,7 @@
 ### Usable and Editable version
 
 1. **Download the Latest MATLAB Version:**
-   - Download the latest `.mlapp` file from the ./mlapp_design folder
+   - Download the latest `.mlapp` file from the [`./mlapp_design`](./mlapp_design) folder.
 
 2. **Open the App:**
    - Double-click the downloaded `.mlapp` file to open it in MATLAB.
