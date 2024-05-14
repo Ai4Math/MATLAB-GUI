@@ -13,8 +13,15 @@
 
 ## Download and Open the App
 
+
+### Usable and but NOT Editable version
+
+1. Download the `linear_app_package_v7.mlappinstall` and double click to run.
+
+### Usable and Editable version
+
 1. **Download the Latest MATLAB Version:**
-   - Download the latest `.mlapp` file from the repository or the provided link.
+   - Download the latest `.mlapp` file from the ./mlapp_design folder
 
 2. **Open the App:**
    - Double-click the downloaded `.mlapp` file to open it in MATLAB.
