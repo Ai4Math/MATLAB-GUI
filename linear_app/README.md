@@ -16,7 +16,7 @@
 
 ### Usable and but NOT Editable version
 
-1. Download the [`linear_app_package_v7.mlappinstall`](./linear_app_package_v7.mlappinstall) and double click to run.
+1. Download the [`linear_app_package_v7.mlappinstall`](./linear_app_package_v7.mlappinstall) by clicking `download raw file` button on the top right and double click to run.
 
 ### Usable and Editable version
 
