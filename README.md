@@ -16,6 +16,10 @@ Last updated by Huy Nguyen - March 2024
 
 [<img src="line_integral/demo/vector_field_line_integral_3d.png" width="600"/>](./line_integral/)
 
-## [3. Vector Field Plot and Line Integral GUI (read more)](./linear_app/)
+## [4. Comprehensive Linear App (read more)](./linear_app/)
+
+[<img src="https://github.com/Ai4Math/MATLAB-GUI/assets/114793725/8f202174-b9d0-4de3-9a42-5496e5d244af" width="600"/>](./linear_app/)
+
+
 
 
